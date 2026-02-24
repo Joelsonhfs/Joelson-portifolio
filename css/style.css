@@ -1,0 +1,52 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /*background: linear-gradient(135deg, #0c0f17, #151925 100%); */
+    background-color: lightblue;
+    color: #e6e9f0;
+    min-width: 100vh;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(12, 15, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(42, 252, 133, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e6e9f0; 
+    text-decoration: none;
+}
+
+logo-icon {
+    font-size: 1.8rem;
+    color: #2afc85;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, #e6e9f0 0%, #2afc85 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
