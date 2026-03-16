@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator with Unit Converter</title>
+    <!--   Link to font awesome website for inserting social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--   Link to custom CSS -->
+  <link rel="stylesheet" href="css/stylecalculator.css">
+
+</head>
+<body>
+    <h1>Calculator with Unit Converter</h1>
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculadora</h2>
+            <input type="text" id="calc-display" readonly>
+            <div class="buttons">
+                <button class="btnnumber" onclick="appendCalc('7')">7</button>
+                <button class="btnnumber" onclick="appendCalc('8')">8</button>
+                <button class="btnnumber" onclick="appendCalc('9')">9</button>
+                <button class="btnoperator" onclick="appendCalc('/')">/</button>
+                <button class="btnnumber" onclick="appendCalc('4')">4</button>
+                <button class="btnnumber" onclick="appendCalc('5')">5</button>
+                <button class="btnnumber" onclick="appendCalc('6')">6</button>
+                <button class="btnoperator" onclick="appendCalc('*')">*</button>
+                <button class="btnnumber" onclick="appendCalc('1')">1</button>
+                <button class="btnnumber" onclick="appendCalc('2')">2</button>
+                <button class="btnnumber" onclick="appendCalc('3')">3</button>
+                <button class="btnoperator" onclick="appendCalc('-')">-</button>
+                <button class="btnnumber" onclick="appendCalc('0')">0</button>
+                <button class="btnnumber" onclick="appendCalc('.')">.</button>
+                <button class="btnoperator" onclick="clearCalc()">C</button>
+                <button class="btnoperator" onclick="appendCalc('+')">+</button>
+                <button class="btnresult" onclick="calculateCalc()">=</button>
+            </div>
+            <div class="result" id="calc-result"></div>
+        </div>
+
+        <div class="unit-converter">
+            <h2>Unit Converter</h2>
+            <input type="number" id="unit-value" placeholder="Enter value">
+            <select id="unit-from">
+                <option value="m">Meters (m)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+            </select>
+            <select id="unit-to">
+                <option value="m">Meters (m)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+            </select>
+            <button onclick="convertUnit()">Convert</button>
+            <div class="result" id="unit-result"></div>
+        </div>
+    </div>
+
+    <script src="javascript/calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List Pro</title>
+  <!--   Link to font awesome website for inserting social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--   Link to custom CSS -->
+  <link rel="stylesheet" href="css/styletodo.css">
+</head>
+<body class="Todo-List">
+<h1 class="Elegant-Shadow">Joelson To-Do List</h1>
+
+<div class="container">
+
+  <!-- TODO -->
+
+
+  <div class="card-TodoList">
+    <h2>To-Do List</h2>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="Nova tarefa...">
+      <button id="addTaskBtn" class="fa-solid fa-plus fa-lg"></button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- POMODORO -->
+  <div class="card-TodoList">
+    <h2>Pomodoro</h2>
+    <div class="timer" id="timer">25:00</div>
+    <div class="timer-buttons">
+      <button class="start" id="startBtn">Start</button>
+      <button class="pause" id="pauseBtn">Pause</button>
+      <button class="reset" id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div class="card-TodoList">
+    <h2>Notas</h2>
+    <textarea id="notes" placeholder="Escreva suas anotações..."></textarea>
+  </div>
+
+</div>
+<script src="javascript/script.js"></script>
+</body>
+</html>
